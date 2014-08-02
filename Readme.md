@@ -18,7 +18,7 @@ for (var i = 0; i < 100; i++) {
 
 ## API
 
-atomic(path)
+### atomic(path)
 
   Load or create an object to write to. Returns a function with the signature `function(obj, done) {}`, that you can use to add to the map
 
