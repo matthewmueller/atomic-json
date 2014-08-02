@@ -1,7 +1,7 @@
 
 # atomic-json
 
-  write to a json file in parallel without losing keys.
+  add to a json file in parallel without losing keys.
 
 ## Example
 
