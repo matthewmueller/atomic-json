@@ -21,8 +21,8 @@ var tmp = join(__dirname, 'tmp.json');
 
 describe('atomic-json', function() {
 
-  afterEach(function(done) {
-    unlink(done);
+  after(function(done) {
+    unlink(tmp, done);
   })
 
   it('should add to an object', function(done) {
@@ -34,18 +34,11 @@ describe('atomic-json', function() {
       else json(key, noop);
     }
 
-    function next(err) {
+    function next(err, obj) {
       if (err) done(err);
-      var keys = Object.keys(JSON.parse(read(tmp, 'utf8')));
+      var keys = Object.keys(obj);
       assert.deepEqual(range(1, 100), keys);
       done();
-    }
-  })
-
-  it('should add to an array', function() {
-    var json = atomic(tmp);
-    for (var i = 0; i <= 100; i++) {
-
     }
   })
 

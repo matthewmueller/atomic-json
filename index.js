@@ -30,7 +30,10 @@ function atomic(path) {
 
   return enqueue(function(obj, fn) {
     map = extend(map, obj);
-    write(path, stringify(map), fn);
+    write(path, stringify(map), function(err) {
+      if (err) fn(err);
+      else fn(null, map);
+    });
   });
 }
 
