@@ -1,0 +1,19 @@
+{
+  "name": "atomic-json",
+  "version": "0.0.1",
+  "description": "add to a json file atomically",
+  "keywords": [],
+  "author": "Matthew Mueller <mattmuelle@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MatthewMueller/atomic-json.git"
+  },
+  "dependencies": {
+    "enqueue": "0.0.2",
+    "extend.js": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "main": "index"
+}
