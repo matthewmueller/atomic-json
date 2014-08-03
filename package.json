@@ -1,6 +1,6 @@
 {
   "name": "atomic-json",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "add to a json file atomically",
   "keywords": [],
   "author": "Matthew Mueller <mattmuelle@gmail.com>",
