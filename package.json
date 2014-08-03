@@ -9,7 +9,7 @@
     "url": "git://github.com/MatthewMueller/atomic-json.git"
   },
   "dependencies": {
-    "enqueue": "0.0.2",
+    "enqueue": "0.0.3",
     "extend.js": "0.0.1"
   },
   "devDependencies": {
