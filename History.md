@@ -1,4 +1,10 @@
 
+0.0.4 / 2014-08-29
+==================
+
+ * don't use require('mapping.json')
+   as it triggers refreshes on `node-dev`
+
 0.0.3 / 2014-08-02
 ==================
 
